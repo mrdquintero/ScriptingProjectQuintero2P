@@ -5,14 +5,17 @@ using UnityEngine;
 public class ArrayScript : MonoBehaviour
 {
     public GameObject[] players;
-
+    int a = 1;
     void Start()
     {
         players = GameObject.FindGameObjectsWithTag("Player");
 
         for (int i = 0; i < players.Length; i++)
         {
-            Debug.Log("Player Number " + i + " is named " + players[i].name);
+
+            
+            Debug.Log("Player Number " + a + " is named " + players[i].name);
+            a++;
         }
     }
 
